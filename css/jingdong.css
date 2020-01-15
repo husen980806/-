@@ -1,0 +1,138 @@
+
+body{
+	font-size: 16px;
+	background: #f6f6f6;
+}
+.header{
+	width: 100%;
+	height: .89rem;
+	background: #c62722;
+	display: flex;
+	justify-content:space-between;
+	padding: 0 23px;
+	box-sizing: border-box;
+	line-height: .89rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.banner{
+	width: 6.79rem;
+	height: 2.78rem;
+	background: salmon;
+	margin:  0 auto;
+}
+/* .swiper-container{
+	width: 6.79rem;
+	height: 2.78rem;
+}
+.swiper-wrapper{
+	width: 6.79rem;
+	height: 2.78rem;
+}
+..swiper-wrapper img{
+	width: 100%;
+} */
+.goods{
+	width: 100%;
+	height: 1.88rem;
+	
+}
+.goods img{
+	width: 100%;
+	height: 1.88rem;
+}
+.nav{
+	width: 100%;
+	height: 3.8rem;
+	background: #f6f6f6;
+}
+.nav ul{
+	width: 100%;
+	height: 3.8rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.nav ul li{
+	width: 1.5rem;
+	height: 1.38rem;
+	text-align: center;
+}
+.nav ul li img{
+	width: .74rem;
+	height: .74rem;
+}
+.secKill{
+	width: 7.06rem;
+	height: 3.06rem;
+	background:white;
+	margin:.2rem auto ;
+	padding-bottom: .98rem;
+}
+.secKill .secKill_title{
+	width: 7.06rem;
+	height: .64rem;
+	line-height: .64rem;
+}
+.secKill_title {
+	display: flex;
+	justify-content: space-between;
+}
+.swiper-container{
+	height: 2.78rem;
+}
+.swiper-slide img{
+	width: 100%;
+	height:2.78rem;
+}
+.sec_list{
+	display: flex;
+	justify-content: space-around;
+}
+.sec_list .list_one{
+	width: 1.67rem;
+	height: 2.5rem;
+	text-align: center;
+}
+.list_one img{
+	width: 1.38rem;
+	height: 1.38rem;
+	
+}
+.list_one p{
+	text-align: center;
+}
+.list_one  .price{
+	color: red;
+	/* rem适配后 字体要放大2被 */
+	font-size: 25px;
+}
+.list_one  .old_price{
+	text-decoration: line-through;
+}
+.footer {
+	width: 100%;
+	height: .98rem;
+	background: #fdfdfd;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.footer ul{
+	width: 100%;
+	height: .98rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer ul li{
+	width: .7rem;
+	height: .76rem;
+}
+.footer ul li img{
+	width: .8rem;
+	height: .8rem;
+}

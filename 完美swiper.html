@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	</head>
+	<style type="text/css">
+		.swiper-container{
+			width: 500px;
+			height: 400px;
+			margin: 0 auto;
+		}
+		/*.swiper-wrapper{
+			width: 500px;
+			height: 400px;
+		}*/
+		.swiper-slide  img{
+			width: 500px;
+			height: 400px;
+		}
+		/*.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+			bottom: 50px;
+		}*/
+	</style>
+	<body>
+		<div class="swiper-container">
+			<!--滚动部分-->
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="img/a.PNG"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/b.PNG"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/c.PNG"/>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/d.PNG"/>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
+			<div class="swiper-button-prev"></div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+   			 <div class="swiper-button-next"></div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+		</div>
+	</body>
+	<script src="swiper.min.js"></script>
+	<script type="text/javascript">
+//		3.0 ---版本
+//		4.0  5.0版本  初始化
+			var mySwiper=new Swiper(".swiper-container",{ 
+				//配置项
+				autoplay:true,//自动轮播
+				pagination: {//初始化分页
+				    el: '.swiper-pagination',
+				    clickable:true//分页点击
+				 },
+				 navigation: {//前后按钮
+			      nextEl: '.swiper-button-next',
+			      prevEl: '.swiper-button-prev',
+			    },
+			    loop:true,//环路
+				//effect:"flip"//切换效果,相当于是图片翻转这一效果
+			})
+			
+			
+	</script>
+</html>

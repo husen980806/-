@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			.swiper-container{  
+				width: 400px;
+				height: 200px;
+			}
+			.swiper-container img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="swiper-container">
+					<!--滚动部分-->
+			<div class="swiper-wrapper">
+			<div class="swiper-slide">
+					<img src="img/a.PNG"/>
+			</div>
+			<div class="swiper-slide">
+					<img src="img/b.PNG"/>
+			</div>
+			<div class="swiper-slide">
+					<img src="img/c.PNG"/>
+			</div>
+			<div class="swiper-slide">
+					<img src="img/d.PNG"/>
+			</div>
+		    </div>
+		
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+						<!--<div class="swiper-button-prev"></div>-->
+						 <!--<div class="swiper-button-next"></div>-->
+		</div>
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="swiper.min.js"></script>
+		
+		<script>
+			
+					var mySwiper=new Swiper(".swiper-container",{ 
+									//配置项
+									autoplay:true,//自动轮播
+									pagination: {//初始化分页
+									    el: '.swiper-pagination',
+									    clickable:true//分页点击
+									 },
+									 navigation: {//前后按钮
+								      nextEl: '.swiper-button-next',
+								      prevEl: '.swiper-button-prev',
+								    },
+								    loop:true,//环路
+									//effect:"flip"//切换效果
+									
+								})
+								
+			
+		</script>
+			
+	</body>
+</html>
